@@ -10,3 +10,5 @@ how to find out what you have
 3. check the Device name. 
 
 the webi modules have a "webi" sticker on them. the generic ethernet module dont.
+
+AFTER Uploading the new firmware, perfrom a factory reset!!!!
