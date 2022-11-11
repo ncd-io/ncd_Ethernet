@@ -1,0 +1,1512 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Index - CONFIGURATION</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=GB2312' />
+    <style>
+        <!--
+        body{
+            overflow-wrap: anywhere;
+        }
+        ::selection {
+            background: red;
+            color: #fff;
+        }
+
+        ::-moz-selection {
+            background: red;
+            color: #fff;
+        }
+
+        ::-webkit-selection {
+            background: red;
+            color: #fff;
+        }
+
+        body {
+            font-family: Verdana,Arial,sans-serif;
+            background: #5b5b5b;
+            margin: 0px auto;
+            padding: 0 0 20px 0;
+        }
+
+        #shadow-one {
+            width: 760px;
+            border: 1px solid #555;
+            border-top: 0;
+            margin: 0px auto;
+        }
+
+        #shadow-two {
+            border: 1px solid #4b4b4b;
+            border-top: 0;
+        }
+
+        #shadow-three {
+            border: 1px solid #444;
+            border-top: 0;
+        }
+
+        #shadow-four {
+            border: 1px solid #3a3a3a;
+            border-top: 0;
+        }
+
+        #page {
+            border: 1px solid #333;
+            background: #fff;
+            border-top: 0;
+            padding: 20px;
+            font-size: 10pt;
+        }
+
+            #page td {
+                font-size: 10pt;
+            }
+
+        #title {
+            background: #369;
+            padding: 4px;
+            font-weight: bold;
+            color: #fff;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+
+        .right {
+            float: right;
+            width: auto;
+            text-align: right;
+            margin-top: 7px;
+            margin-right: 30px;
+        }
+
+        #content {
+            width: 712px;
+            float: right;
+        }
+
+            #content a {
+                color: #39c;
+                text-decoration: none;
+            }
+
+                #content a:hover {
+                    color: #36c;
+                    text-decoration: underline;
+                }
+
+            #content li a {
+                color: #fff;
+                text-decoration: none
+            }
+
+                #content li a:hover {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+
+        #footer {
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px dotted #666;
+        }
+
+        .spacer {
+            clear: both;
+        }
+
+        .butstyle {
+            float: right;
+            width: 120px;
+            height: 25px;
+        }
+
+        #nav li {
+            list-style: none;
+            width: 150px;
+            margin-top: 0;
+        }
+
+            #nav li a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+            }
+
+        #nav li a:hover {
+          color: #fff;
+        }
+
+        .aa {
+            color: white;
+            font-family: Verdana;
+            font-weight: bold;
+            height: 16px;
+            padding: 8px 0 8px 8px;
+            border-right: 0px solid #AAC7E9;
+            background: #369;
+            cursor: pointer;
+            border-top: 1px solid #fff;
+            display: block;
+        }
+
+        .bb {
+            color: white;
+            font-family: Verdana;
+            font-weight: bold;
+            height: 16px;
+            padding: 8px 0 8px 8px;
+            border-right: 0px solid #AAC7E9;
+            background: #39c;
+            cursor: pointer;
+            border-top: 1px solid #fff
+        }
+
+        .list2 {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 3px;
+            text-align: left;
+            background: #fff;
+        }
+
+            .list2 li {
+                color: #fff;
+                font-size: 13px;
+                line-height: 24px;
+                padding: 0 0 0 5px;
+            }
+
+            .list2 a {
+                text-decoration: underline;
+            }
+
+        .lfloat {
+            float: left;
+        }
+
+        .rfloat {
+            float: right;
+        }
+
+        .ctt {
+            padding: 0px 0px 0px 5px;
+            clear: both;
+            text-align: left;
+            /* height: 680px; */
+        }
+
+        .dis {
+            display: block;
+        }
+
+        .undis {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        form, ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .w {
+            width: 241px;
+        }
+
+        textarea {
+            resize: none;
+        }
+        -->
+        #tbc_04 table{
+            width: 100%;
+        }
+        #tbc_04 table td{
+            border: 0;
+            padding: 12px 0px;
+            text-align: center;
+        }
+        #tbc_04 table td:first-child{
+            font-weight: bold;
+        }
+		.relay_wrapper{
+			display: flex;
+			justify-content: space-between;
+			margin: 12px 0;
+			align-items: center;
+		}
+		.relay_label{
+			width: 25%;
+		}
+		.button button,
+        button.button{
+			padding: 8px 12px;
+			border-radius: 4px;
+		}
+        #adc_table{
+            width: 100%;
+        }
+        .adc_bar > div{
+            background: green;
+            border: black;
+            border-radius: .5em;
+            height: 1em;
+        }
+        .adc_bar{
+            background: #ccc;
+            border-radius: .5em;
+            border: 1px solid #777;
+            width: 100%;
+            height: 1em;
+        }
+        .adc_bar_cell{
+            width: 70%;
+        }
+        .adc_label{
+            width: 20%;
+        }
+        .adc_value{
+            width: 10%;
+        }
+        .bank_header{
+            display: flex;
+            justify-content: space-between;
+            background: #555;
+            padding: 8px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            align-items: center;
+        }
+        .macros_wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .macros_wrapper button{
+            margin: 8px;
+        }
+    </style>
+    <script>
+        var Out_of_range = 0;
+        var adc_poll;
+        function AJAX(url, callback) {
+            var req = AJAX_init();
+            req.onreadystatechange = AJAX_processRequest;
+            function AJAX_init() {
+                if (window.XMLHttpRequest) {
+                    return new XMLHttpRequest();
+                }
+                else if (window.ActiveXObject) {
+                    return new ActiveXObject('Microsoft.XMLHTTP');
+                }
+            }
+            function AJAX_processRequest() {
+                if ((req.readyState == 4) && (req.status == 200) && callback) {
+                    callback(req.responseText);
+                }
+            }
+            this.doGet = function () {
+                req.open('GET', url, true);
+                req.send(null);
+            };
+            this.doPost = function (body) {
+                req.open('POST', url, true);
+                req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                req.setRequestHeader('ISAJAX', 'yes');
+                req.send(body);
+            };
+        }
+
+        function GetTabId() {
+            var s = [];
+            var url = window.location.href;
+            s = url.split('#');
+            if (url.indexOf('#') != -1) {
+                if (s[s.length - 1] == 'Device_View') return 1;
+                else if (s[s.length - 1] == 'Basic') return 2;
+                else if (s[s.length - 1] == 'Advanced') return 3;
+                else if (s[s.length - 1] == 'Web-i') return 4;
+                else if (s[s.length - 1] == 'Macros') return 5;
+                else if (s[s.length - 1] == 'ADC') return 6;
+                else if (s[s.length - 1] == 'Management') return 7;
+                else if (s[s.length - 1] == 'About_Us') return 8;
+                else return 1;
+            }
+            else
+                return 1;
+        }
+        function $(id) {
+            return document.getElementById(id);
+        }
+        function red(id) {
+            $(id).style.backgroundColor = 'red';
+            $('textcheckvalueadvanced').innerHTML = 'Entered value is out of range!';
+            $('textcheckvaluebasic').innerHTML = 'Entered value is out of range!';
+        }
+        function white(id) {
+            $(id).style.backgroundColor = 'white';
+            $('textcheckvalueadvanced').innerHTML = '';
+            $('textcheckvaluebasic').innerHTML = '';
+        }
+        function getProfileCallback(o) {
+            $('imgLogo').src = o.logo;
+            $('divCompanyIntro').innerHTML = o.company_profile;
+            $('footer').innerHTML = o.footer;
+        }
+        function secondsToDhms(seconds) {
+            seconds = parseInt(seconds, 10);
+            var d = Math.floor(seconds / (3600 * 24));
+            var h = Math.floor(seconds % (3600 * 24) / 3600);
+            var m = Math.floor(seconds % 3600 / 60);
+            var s = Math.floor(seconds % 3600 % 60);
+            var dDisplay = d > 0 ? d + (d == 1 ? " day " : " days ") : "";
+            var hDisplay = h > 0 ? h + (h == 1 ? " hour " : " hours ") : "";
+            var mDisplay = m > 0 ? m + (m == 1 ? " minute " : " minutes ") : "";
+            var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+            return dDisplay + hDisplay + mDisplay + sDisplay;
+        }
+        function settingsCallback(o) {
+            if ($('checkboxnetbios')) {
+                if (o.netbios == '1') $('checkboxnetbios').checked = 'checked';
+            }
+            if ($('checkboxlinkc')) {
+                if (o.clr_buf == '1') $('checkboxlinkc').checked = 'checked';
+            }
+            if ($('checkboxecho')) { if (o.echo == '1') $('checkboxecho').checked = 'checked'; }
+            if ($('checkboxdebug')) { if (o.debug == '1') $('checkboxdebug').checked = 'checked'; }
+            if ($('checkboxdhcp')) {
+                if (o.dhcp == '1') {
+                    $('checkboxdhcp').checked = 'checked';
+                    $('txtIp').disabled = 'true';
+                    $('txtSub').disabled = 'true';
+                    $('txtGw').disabled = 'true';
+                    $('txtDns').disabled = 'true';
+                }
+            }
+            if ($('checkboxbind')) {
+                if (o.bind == '1') { $('checkboxbind').checked = 'checked'; }
+            }
+            if (o.dnsf == '0') { $('txtRip').value = o.rip; } else { $('txtRip').value = o.domain; }
+            if ($('txtStart')) $('txtStart').value = o.start;
+            if ($('txtVer')) $('txtVer').innerHTML = o.ver;
+            if ($('txtVer2')) $('txtVer2').innerHTML = o.ver;
+            if ($('txtDevice')) $('txtDevice').value = o.devicename;
+            if ($('txtHttpport')) $('txtHttpport').value = o.httpport;
+            if ($('txtMac')) $('txtMac').value = o.mac;
+            if ($('txtIp')) $('txtIp').value = o.ip;
+            if ($('txtSub')) $('txtSub').value = o.sub;
+            if ($('txtGw')) $('txtGw').value = o.gw;
+            if ($('txtDns')) $('txtDns').value = o.dns;
+            if ($('txtRpt')) $('txtRpt').value = o.rpt;
+            if ($('txtLpt')) $('txtLpt').value = o.lpt;
+            /**add Modbus mode**/
+            var iMod = parseInt(o.mode);
+            if (iMod < 3) {
+                if ($('txtMode')) $('txtMode').value = o.mode;
+                if ($('chkModbus')) { $('selModbusMode').disabled = true; }
+            } else {
+                if ($('chkModbus')) { $('chkModbus').checked = 'checked'; $('selModbusMode').disabled = false; }
+                if ($('txtMode')) $('txtMode').value = (iMod & 0x0F).toString();
+                if ($('selModbusMode')) $('selModbusMode').value = ((iMod & 0xF0) >> 4).toString();
+            }
+            if ($('txtPack_t')) $('txtPack_t').value = o.pack_t;
+            if ($('txtPack_l')) $('txtPack_l').value = o.pack_l;
+            if ($('txtIna')) $('txtIna').value = o.ina;
+            if ($('txtRec')) $('txtRec').value = o.rec;
+            if ($('txtKa')) $('txtKa').value = o.ka;
+            if ($('txtLinkp')) $('txtLinkp').value = o.linkp;
+            if ($('txtLinks')) $('txtLinks').value = o.links;
+            if ($('txtLinkc')) $('txtLinkc').value = o.linkc;
+            if ($('txtBaudrate')) $('txtBaudrate').value = o.baudrate;
+            if ($('txtDatabit')) $('txtDatabit').value = o.databit;
+            if ($('txtParity')) $('txtParity').value = o.parity;
+            if ($('txtStopbit')) $('txtStopbit').value = o.stopbit;
+            if ($('txtFlow')) $('txtFlow').value = o.flow;
+            if ($('txtBaudrate2')) {
+                switch (parseInt(o.baudrate)) {
+                    case 0: $('txtBaudrate2').innerHTML = '1200'; break;
+                    case 1: $('txtBaudrate2').innerHTML = '2400'; break;
+                    case 2: $('txtBaudrate2').innerHTML = '4800'; break;
+                    case 3: $('txtBaudrate2').innerHTML = '9600'; break;
+                    case 4: $('txtBaudrate2').innerHTML = '14400'; break;
+                    case 5: $('txtBaudrate2').innerHTML = '19200'; break;
+                    case 6: $('txtBaudrate2').innerHTML = '38400'; break;
+                    case 7: $('txtBaudrate2').innerHTML = '56000'; break;
+                    case 8: $('txtBaudrate2').innerHTML = '57600'; break;
+                    case 9: $('txtBaudrate2').innerHTML = '115200'; break;
+                    case 10: $('txtBaudrate2').innerHTML = '128000'; break;
+                    case 11: $('txtBaudrate2').innerHTML = '230400'; break;
+                    case 12: $('txtBaudrate2').innerHTML = '256000'; break;
+                    case 13: $('txtBaudrate2').innerHTML = '460800'; break;
+                    case 14: $('txtBaudrate2').innerHTML = '921600'; break;
+                    case 15: $('txtBaudrate2').innerHTML = '1152000'; break;
+                }
+            }
+            if ($('txtDatabit2')) {
+                switch (parseInt(o.databit)) {
+                    case 0: $('txtDatabit2').innerHTML = '7'; break;
+                    case 1: $('txtDatabit2').innerHTML = '8'; break;
+                    default: $('txtDatabit2').innerHTML = '8'; break;
+                }
+            }
+            if ($('txtParity2')) {
+                switch (parseInt(o.parity)) {
+                    case 0: $('txtParity2').innerHTML = 'NONE'; break;
+                    case 1: $('txtParity2').innerHTML = 'ODD'; break;
+                    case 2: $('txtParity2').innerHTML = 'EVEN'; break;
+                }
+            }
+            if ($('txtStopbit2')) {
+                switch (parseInt(o.stopbit)) {
+                    case 0: $('txtStopbit2').innerHTML = '0.5'; break;
+                    case 1: $('txtStopbit2').innerHTML = '1'; break;
+                    case 2: $('txtStopbit2').innerHTML = '1.5'; break;
+                    case 3: $('txtStopbit2').innerHTML = '2'; break;
+                }
+            }
+            if ($('txtFlow2')) {
+                switch (parseInt(o.flow)) {
+                    case 0: $('txtFlow2').innerHTML = 'NONE'; break;
+                    case 1: $('txtFlow2').innerHTML = 'CTS/RTS'; break;
+                    case 2: $('txtFlow2').innerHTML = 'RS485'; break;
+                }
+            }
+            if ($('txtType')) $('txtType').innerHTML = o.devicetype;
+            if ($('txtSn')) $('txtSn').innerHTML = o.device_sn;
+            if (o.netbios == '0') { $('txtDeviceName').innerHTML = o.devicename; } else { $('txtDeviceName').innerHTML = '<a href=http://' + o.devicename + '/>' + o.devicename + '</a>'; }
+            if ($('txtMode2')) {
+                switch (parseInt(o.mode)) {
+                    case 0: $('txtMode2').innerHTML = 'TCP Server'; break;
+                    case 1: $('txtMode2').innerHTML = 'TCP Client'; break;
+                    case 2: $('txtMode2').innerHTML = 'UDP'; break;
+                    case 16: $('txtMode2').innerHTML = 'Modbus RTU (TCP Server)'; break;
+                    case 17: $('txtMode2').innerHTML = 'Modbus RTU (TCP Client)'; break;
+                    case 18: $('txtMode2').innerHTML = 'Modbus RTU (UDP)'; break;
+                    case 32: $('txtMode2').innerHTML = 'Modbus ASCII (TCP Server)'; break;
+                    case 33: $('txtMode2').innerHTML = 'Modbus ASCII (TCP Client)'; break;
+                    case 34: $('txtMode2').innerHTML = 'Modbus ASCII (UDP)'; break;
+                }
+            }
+            if ($('txtRpt2')) $('txtRpt2').innerHTML = o.rpt;
+            if ($('txtLpt2')) $('txtLpt2').innerHTML = o.lpt;
+            if (o.dnsf == '0') { $('txtRip2').innerHTML = o.rip; } else { $('txtRip2').innerHTML = o.domain; }
+            if ($('txtDhcp2')) {
+                if (o.dhcp == '0') {
+                    $('txtDhcp2').innerHTML = 'OFF';
+                }
+                else {
+                    $('txtDhcp2').innerHTML = 'ON';
+                }
+                $('txtIp2').innerHTML = o.ip;
+                $('txtSub2').innerHTML = o.sub;
+                $('txtGw2').innerHTML = o.gw;
+                $('txtDns2').innerHTML = o.dns;
+            }
+            if ($('txtdevicename')) { $('txtdevicename').innerHTML = o.devicename; document.title = o.devicename; }
+            if ($('txtdevicetype')) $('txtdevicetype').innerHTML = o.devicetype;
+            if ($('temp')) $('temp').innerHTML = o.temp + ' C';
+            if ($('onTime')) $('onTime').innerHTML = secondsToDhms(o.ontime);
+            if ($('tx')) $('tx').innerHTML = o.tx;
+            if ($('rx')) $('rx').innerHTML = o.rx;
+        }
+        function checkvalue(id) {
+            if (id == txtRpt) {
+                white('txtRpt'); Out_of_range = 0;
+                if (parseInt($('txtRpt').value) > 65535) { Out_of_range = 1; red('txtRpt'); return; }
+            }
+            if (id == txtLpt) {
+                white('txtLpt'); Out_of_range = 0;
+                if (parseInt($('txtLpt').value) > 65535) { Out_of_range = 1; red('txtLpt'); return; }
+            }
+            if (id == txtIp) {
+                white('txtIp'); Out_of_range = 0;
+                if (!CheckIp('txtIp')) { Out_of_range = 1; red('txtIp'); return; }
+            }
+            if (id == txtSub) {
+                white('txtSub'); Out_of_range = 0;
+                if (!CheckIp('txtSub')) { Out_of_range = 1; red('txtSub'); return; }
+            }
+            if (id == txtGw) {
+                white('txtGw'); Out_of_range = 0;
+                if (!CheckIp('txtGw')) { Out_of_range = 1; red('txtGw'); return; }
+            }
+            if (id == txtDns) {
+                white('txtDns'); Out_of_range = 0;
+                if (!CheckIp('txtDns')) { Out_of_range = 1; red('txtDns'); return; }
+            }
+            if (id == txtIna) {
+                white('txtIna'); Out_of_range = 0;
+                if (parseInt($('txtIna').value) >= 60000) { Out_of_range = 1; red('txtIna'); return; }
+            }
+            if (id == txtKa) {
+                white('txtKa'); Out_of_range = 0;
+                if (parseInt($('txtKa').value) >= 60000) { Out_of_range = 1; red('txtKa'); return; }
+            }
+            if (id == txtHttpport) {
+                white('txtHttpport'); Out_of_range = 0;
+                if (parseInt($('txtHttpport').value) > 65535) { Out_of_range = 1; red('txtHttpport'); return; }
+            }
+            if (id == txtRec) {
+                white('txtRec'); Out_of_range = 0;
+                if (parseInt($('txtRec').value) > 60000) { Out_of_range = 1; red('txtRec'); return; }
+            }
+            if (id == txtPack_t) {
+                white('txtPack_t'); Out_of_range = 0;
+                if (parseInt($('txtPack_t').value) > 60000) { Out_of_range = 1; red('txtPack_t'); return; }
+            }
+            if (id == txtPack_l) {
+                white('txtPack_l'); Out_of_range = 0;
+                if (parseInt($('txtPack_l').value) > 2048) { Out_of_range = 1; red('txtPack_l'); return; }
+            }
+            if (id == txtDevice) {
+                white('txtDevice'); Out_of_range = 0;
+                if ($('txtDevice').value == '' || $('txtDevice').value.length > 15) { Out_of_range = 1; red('txtDevice'); return; }
+            }
+        }
+        function SetValue(o) {
+            o.disabled = true;
+            if (Out_of_range == 1) { $('textcheckvaluebasic').innerHTML = 'Entered Value is Out of Range!'; o.disabled = false; return; }
+            else { $('textcheckvaluebasic').innerHTML = ''; }
+            var ch = $('checkboxdhcp');
+            var lip = $('txtIp').value;
+            var sub = $('txtSub').value;
+            var gw = $('txtGw').value;
+            var dns = $('txtDns').value;
+            var dhcp = '';
+            if (ch.checked) dhcp = 1; else dhcp = 0;
+            var start = $('txtStart').value;
+            /*add modbus mode*/
+            var styp; var sckMode = $('txtMode').value;
+            var chkModbus = $('chkModbus');
+            if (chkModbus.checked) {
+                var ModbusMode = $('selModbusMode').value;
+                styp = (ModbusMode << 4) | (sckMode);
+            } else {
+                styp = sckMode;
+            }
+            var rip = $('txtRip').value;
+            var rpt = $('txtRpt').value;
+            var lpt = $('txtLpt').value;
+            var checkboxbind = $('checkboxbind');
+            if (checkboxbind.checked) { bind = 1; } else { bind = 0; }
+            var dnsf;
+            var baudrate = $('txtBaudrate').value;
+            var databit = $('txtDatabit').value;
+            var parity = $('txtParity').value;
+            var stopbit = $('txtStopbit').value;
+            var flow = $('txtFlow').value;
+            var device = $('txtDevice').value;
+            var netbios; var checkboxnetbios = $('checkboxnetbios'); if (checkboxnetbios.checked) { netbios = 1; } else { netbios = 0; }
+            var httpport = $('txtHttpport').value;
+            var pack_t = $('txtPack_t').value;
+            var pack_l = $('txtPack_l').value;
+            var ina = $('txtIna').value;
+            var ka = $('txtKa').value;
+            var rec = $('txtRec').value;
+            var linkp = $('txtLinkp').value;
+            var links = $('txtLinks').value;
+            var linkc = $('txtLinkc').value;
+            var clrbuf; var checkboxlinkc = $('checkboxlinkc'); if (checkboxlinkc.checked) { clrbuf = 1; } else { clrbuf = 0; }
+            var debug; var checkboxdebug = $('checkboxdebug'); if (checkboxdebug.checked) { debug = 1; } else { debug = 0; }
+            var echo; var checkboxecho = $('checkboxecho'); if (checkboxecho.checked) { echo = 1; } else { echo = 0; }
+            var oSetSocket;
+            var post_timer;
+            if (CheckIp('txtRip')) {
+                dnsf = 0;
+                post_timer = setTimeout(
+                    function () {
+                        oSetSocket = new AJAX('config.cgi', function (t) { try { alert(t); } catch (e) { alert(e); } });
+                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rip=' + rip + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo
+                        );
+                    }, 300);
+            }
+            else {
+                dnsf = 1;
+                domain = rip;
+                post_timer = setTimeout(
+                    function () {
+                        oSetSocket = new AJAX('config.cgi', function (t) { try { alert(t); } catch (e) { alert(e); } });
+                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&domain=' + domain + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo
+                        );
+                    }, 300);
+            }
+            o.disabled = false;
+        }
+        function test(o) {
+            o.disabled = true;
+            o.disabled = false;
+            return;
+        }
+        function CheckIp(ip) {
+            var ipAddress = $(ip).value;
+            var re = /^([0-9]|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.([0-9]|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.([0-9]|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.([0-9]|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/;
+            if (!re.test(ipAddress)) { return 0; }
+            else { return 1; }
+        }
+        function onChecked() {
+            var chdhcp = $('checkboxdhcp');
+            if (chdhcp.checked) {
+                $('txtIp').disabled = true;
+                $('txtSub').disabled = true;
+                $('txtGw').disabled = true;
+                $('txtDns').disabled = true;
+            } else {
+                $('txtIp').disabled = false;
+                $('txtSub').disabled = false;
+                $('txtGw').disabled = false;
+                $('txtDns').disabled = false;
+            }
+        }
+        function enableModbus() {
+            var chk = $('chkModbus');
+            if (chk.checked) {
+                $('lblModbus').disabled = false;
+                $('selModbusMode').disabled = false;
+            } else {
+                $('lblModbus').disabled = true;
+                $('selModbusMode').disabled = true;
+            }
+        }
+        function chgpwd() {
+            var oldpwd = $('txtoldpwd').value;
+            var newpwd = $('txtnewpwd').value;
+            var newpwd2 = $('txtnewpwd2').value;
+            var ochgpwd;
+            var post_timer;
+            if (newpwd.length == 0 || newpwd.length > 15 || oldpwd.length == 0 || oldpwd.length > 15) {
+                $('textcheckpwd').innerHTML = 'Password length must be 1~15 bytes!';
+
+            }
+            else if (newpwd == newpwd2) {
+                post_timer = setTimeout(
+                    function () {
+                        ochgpwd = new AJAX('chgpwd.cgi', function (t) { try { alert(t); } catch (e) { alert(e); } location.reload(); });
+                        ochgpwd.doPost('oldpwd=' + oldpwd + '&newpwd=' + newpwd);
+                    }, 300);
+            }
+            else {
+                $('textcheckpwd').innerHTML = 'The new and confirmed passwords do not match!';
+            }
+        }
+        function do_default() {
+            var ret = window.confirm("Are you sure to FACTORY RESET this device?");
+            if (ret) {
+                location.href = 'factory.cgi';
+                return;
+            }
+            else { return; }
+        }
+        function do_reset() {
+            var ret = window.confirm("Are you sure to RESET this device?");
+            if (ret) {
+                location.href = 'reset.cgi';
+                return;
+            }
+            else { return; }
+        }
+        function do_logout() {
+            var ret = window.confirm("Are you sure to LOGOUT?");
+            if (ret) {
+                location.href = 'logout.cgi';
+                return;
+            }
+            else { return; }
+        }
+        function evil(fn) {
+            var Fn = Function;
+            return new Fn('return ' + fn)();
+        }
+        function getRunData() {
+            var oUpdate;
+            setTimeout(function () { oUpdate = new AJAX('rundata.cgi', function (t) { try { evil(t); } catch (e) { location.href = '/'; } }); oUpdate.doPost(''); }, 300);
+        }
+        function getRunDataCallback(o) {
+            if ($('temp')) $('temp').innerHTML = o.temp + ' C';
+            if ($('onTime')) $('onTime').innerHTML = secondsToDhms(o.ontime);
+            if ($('tx')) $('tx').innerHTML = o.tx;
+            if ($('rx')) $('rx').innerHTML = o.rx;
+        }
+        // function web_i() {
+        //     var web_i_cgi;
+        //     var Turn_off_relay1 = "223,3,254,100,0,15";
+        //     var Turn_off_relay2 = "147,3,254,101,0,16";
+        //     var Turn_off_relay3 = "369,3,254,102,0,17";
+        //     setTimeout(function () { web_i_cgi = new AJAX('webi_control.cgi', function (t) { try { evil(t); } catch (e) { location.href = '/'; } }); web_i_cgi.doPost(Turn_off_relay1+':'+Turn_off_relay2+':'+Turn_off_relay3); }, 300);
+        // }
+        // function web_iCallback(o) {
+        //     console.log(o);
+        //     if ($('web_cgi_result')) $('web_cgi_result').innerHTML = o.web_i_anwser;
+        //     document.getElementById("web_response_block").className = "hidden";
+        // }
+        function hoverli(n) {   //getRunData();
+            for (var i = 1; i <= 8; i++) {
+                $('tb_' + i).className = 'aa';
+                $('tbc_0' + i).className = 'undis';
+            }
+            $('tbc_0' + n).className = 'list2';
+            $('tb_' + n).className = 'bb';
+            return;
+        }
+        function mouseover(o) {
+            o.style.backgroundColor = '#d3d3d3';
+            return;
+        }
+        function mouseout(o) {
+            o.style.backgroundColor = '#fff';
+            return;
+        }
+
+        // start web code
+        function NCD_AJAX(url, callback, kwargs = {}) {
+            var req = AJAX_init();
+            req.onreadystatechange = AJAX_processRequest;
+            function AJAX_init() {
+                if (window.XMLHttpRequest) {
+                    return new XMLHttpRequest();
+                }
+                else if (window.ActiveXObject) {
+                    return new ActiveXObject('Microsoft.XMLHTTP');
+                }
+            }
+            function AJAX_processRequest() {
+                if ((req.readyState == 4) && (req.status == 200) && callback) {
+                    callback(req.responseText, kwargs);
+                }
+            }
+            this.doGet = function () {
+                req.open('GET', url, true);
+                req.send(null);
+            };
+            this.doPost = function (body) {
+                console.log('sent command(s): (dec)[' + body + ']');
+                req.open('POST', url, true);
+                req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                req.setRequestHeader('ISAJAX', 'yes');
+                req.send(body);
+            };
+        }
+        function build_button(text, onclick, classes = "button", id = ""){
+          return '<button onclick="'+onclick+'" classes="'+classes+'" id="'+id+'">'+text+'</button>';
+        }
+		function remove_superfluous_response(response){
+			response = response.replace('webiControl_Callback({"webiControlRespond":"', '');
+            response = response.replace(':",});', "");
+			return response;
+		}
+        function get_first_callback(kwargs){
+            if(kwargs.hasOwnProperty('callbacks') && kwargs.callbacks.length){
+                return kwargs.callbacks.shift();
+            }
+            else{
+                return false;
+            }
+        }
+        function get_turn_on_relay_command(relay_number){
+            return wrap_api([254, 48, (relay_number-1), 0]);
+        }
+		function turn_on_relay(relay_number, kwargs = {'callbacks': []}){
+			var cmd = get_turn_on_relay_command(relay_number);
+            var bank = Math.floor((relay_number-1+8)/8);
+			kwargs.bank = bank;
+			send_command(cmd, kwargs);
+		}
+        function get_turn_off_relay_command(relay_number){
+            return wrap_api([254, 47, (relay_number-1), 0]);
+        }
+        function turn_off_relay(relay_number, kwargs = {'callbacks': []}){
+			var cmd = get_turn_off_relay_command(relay_number);
+            var bank = Math.floor((relay_number-1+8)/8);
+            kwargs.bank = bank;
+			send_command(cmd, kwargs);
+		}
+
+        function get_set_relay_timer_command(timer, hours, minutes, seconds, relay_number){
+            // timer ids start at 50 for standard timers, 70 for pulse timers, timers are shared.
+            timer = timer + 49;
+            relay_number = relay_number - 1;
+            return wrap_api([254,50, timer, hours, minutes, seconds, relay_number]);
+        }
+        function set_relay_timer(timer, hours, minutes, seconds, relay_number, kwargs = {'callbacks': []}){
+            var cmd = get_set_bank_status_command(timer, hours, minutes, seconds, relay_number);
+            send_command(cmd, kwargs);
+        }
+        function get_set_relay_pulse_timer_command(timer, hours, minutes, seconds, relay_number){
+            // timer ids start at 50 for standard timers, 70 for pulse timers, timers are shared.
+            timer = timer + 69;
+            relay_number = relay_number - 1;
+            return wrap_api([254,50, timer, hours, minutes, seconds, relay_number]);
+        }
+        function set_relay_pulse_timer(timer, hours, minutes, seconds, relay_number, kwargs = {'callbacks': []}){
+            var cmd = get_set_bank_status_command(timer, hours, minutes, seconds, relay_number);
+            send_command(cmd, kwargs);
+        }
+        function get_set_bank_status_command(relay_binary, bank){
+            return wrap_api([254,140, relay_binary, bank]);
+        }
+        function set_relay_bank_status_command(relay_binary, bank, kwargs = {'callbacks': []}){
+            var cmd = get_set_bank_status_command(relay_binary, bank);
+            kwargs.bank = bank;
+            send_command(cmd, kwargs);
+        }
+        function get_toggle_relay_command(relay_number){
+            return wrap_api([254,47, (relay_number-1), 0, 1]);
+        }
+        function toggle_relay(relay_number, kwargs = {'callbacks': []}){
+            var cmd = get_toggle_relay_command(relay_number);
+            var bank = Math.floor((relay_number-1+8)/8);
+            kwargs.bank = bank;
+            send_command(cmd, kwargs);
+        }
+		function wrap_api(cmd){
+			var header = 170;
+			var length = cmd.length;
+			var cmd_sum = cmd.reduce((a,b) => a+b, 0);
+			var checksum = (header+length+cmd_sum) & 255;
+			return [header, length].concat(cmd).concat(checksum);
+		}
+        function get_all_adc_values_10bit_command(){
+            return wrap_api([254,167]);
+        }
+		function get_all_adc_values_10bit(kwargs = {}){
+			var cmd = get_all_adc_values_10bit_command();
+			send_command(cmd, kwargs);
+		}
+
+        function get_all_adc_values_8bit_command(){
+            return wrap_api([254,166]);
+        }
+		function get_all_adc_values_8bit(kwargs = {}){
+			var cmd = get_all_adc_values_8bit_command();
+			send_command(cmd, kwargs);
+		}
+
+        function get_single_adc_values_8bit_command(input){
+            var input_byte = 149 + input;
+            return wrap_api([254,input_byte]);
+        }
+		function get_single_adc_values_8bit(input, kwargs = {}){
+			var cmd = get_single_adc_values_8bit_command(input);
+			send_command(cmd, kwargs);
+		}
+
+        function get_single_adc_values_10bit_command(input){
+            var input_byte = 157 + input;
+            return wrap_api([254,input_byte]);
+        }
+		function get_single_adc_values_10bit(input, kwargs = {}){
+			var cmd = get_single_adc_values_10bit_command();
+			send_command(cmd, kwargs);
+		}
+
+        function get_relay_bank_status_command(bank){
+            var cmd = [254, 124, bank];
+            cmd = wrap_api(cmd);
+            return cmd;
+        }
+        function query_relay_bank_status(bank, kwargs = {'callbacks': []}){
+            // callback = get_first_callback(kwargs);
+            if(!kwargs.hasOwnProperty('bank')){
+                kwargs.bank = bank;
+            }
+            var cmd = get_relay_bank_status_command(kwargs.bank);
+
+            send_command(cmd, kwargs);
+        }
+		function update_adc_UI(event, kwargs = {}){
+			event = remove_superfluous_response(event);
+			var adc_values = event.split(',').slice(2, event.length-1);
+            var items = [].slice.call(document.querySelectorAll("[data-adc-channel]"));
+            items.forEach((item, i) => {
+                item.querySelectorAll('.adc_value')[0].innerHTML = adc_values[i];
+                var bar_div = '<div style="width: '+(adc_values[i]/255*100)+'%"></div>';
+                item.querySelectorAll('.adc_bar')[0].innerHTML = bar_div;
+            });
+		}
+        function macros_display_response(event, kwargs = {}){
+            event = remove_superfluous_response(event);
+            document.getElementById('default_macros_response_target').innerHTML = event;
+        }
+        function get_macros_ui_json(){
+          return {
+    				'buttons': {
+    					0: {
+    						'label': 'Custom Button 1',
+                            'callbacks': [
+                                macros_display_response.name
+                            ],
+    						'commands': [
+    							get_turn_on_relay_command(1),
+    							get_turn_off_relay_command(1),
+    							get_all_adc_values_8bit_command(),
+                                get_set_relay_pulse_timer_command(1, 0, 0, 5, 1),
+                                get_set_relay_timer_command(2,0,0,5,2),
+                                get_single_adc_values_10bit_command(1),
+                                get_single_adc_values_8bit_command(1),
+                                get_all_adc_values_8bit_command(),
+                                get_all_adc_values_10bit_command(),
+    						],
+    					},
+                        // timer, hours, minutes, seconds, relay_number
+    					1: {
+    						'label': 'Custom Button 2',
+                            'callbacks': [
+                                macros_display_response.name
+                            ],
+    						'commands': [
+                                get_turn_on_relay_command(2),
+    							get_turn_off_relay_command(2),
+    							get_all_adc_values_8bit_command()
+    						],
+    					}
+    				}
+    			};
+        }
+		function build_macros_UI(){
+			var macros_JSON = get_macros_ui_json();
+			var macros_html_string = '<div class="macros_wrapper test">';
+			for(var button in macros_JSON.buttons){
+                var onclick_array = [];
+				for(var command in macros_JSON.buttons[button].commands){
+                    onclick_array.push(macros_JSON.buttons[button].commands[command]);
+					// onclick_string += JSON.stringify(macros_JSON.buttons[button].commands[command]);
+				}
+
+                var callback_array = []
+                for(var callback in macros_JSON.buttons.callbacks){
+
+                }
+
+                var onclick_string = 'onclick="send_mutliple_commands('+JSON.stringify(onclick_array)+', {\'callbacks\': ['+macros_JSON.buttons[button].callbacks+']})"';
+				macros_html_string += '<button class="button" '+onclick_string+'>'+macros_JSON.buttons[button].label+'</button>';
+			}
+			macros_html_string += '</div>';
+			document.getElementById('tbc_05').innerHTML += macros_html_string;
+		}
+        function get_standard_ui_json(){
+            return {
+                'number_of_relays': 1,
+                'names': [
+                    'Relay 1'                ],
+                'buttons': {
+                    'turn_on_relay': 'On',
+                    'turn_off_relay': 'Off',
+                    'toggle_relay': 'Toggle',
+                }
+            }
+        }
+		function build_UI(){
+            var standardJSON = get_standard_ui_json();
+            var ui_html = '<div class="bank_wrapper"><div class="bank_header"><span>Bank 1</span><button class="button" onclick="query_relay_bank_status(1, {\'callbacks\': [update_relay_bank_status_ui]})">Refresh</button></div>';
+            if(standardJSON.hasOwnProperty('number_of_relays')){
+                var i = 1;
+                var bank_check = 1;
+                while(i <= standardJSON.number_of_relays){
+                    var current_bank = Math.floor((i-1+8)/8);
+                    if(current_bank != bank_check){
+                        ui_html += '</div><div class="bank_wrapper"><div class="bank_header"><span>Bank '+current_bank+'</span><button class="button" onclick="query_relay_bank_status('+current_bank+', {\'callbacks\': [update_relay_bank_status_ui]})">Refresh</button></div>';
+                    }
+                    ui_html += '<div class="relay_wrapper" data-relay="'+(i-((current_bank-1)*8))+'" data-bank="'+current_bank+'">';
+                    // check if names are defined. Check if there are more relays than names.
+                    if(standardJSON.hasOwnProperty('names') && i <= standardJSON.names.length){
+                        ui_html += '<div class="relay_label">'+standardJSON.names[(i-1)]+'</div>';
+                    }
+                    else{
+                        ui_html += '<div class="relay_label">Relay '+i+'</div>';
+                    }
+                    ui_html += '<div class="relay_status">Querying</div>';
+                    if(standardJSON.hasOwnProperty('buttons')) {
+                        for(var button in standardJSON.buttons){
+                            ui_html += '<div class="button"><button onclick="'+button+'('+i+', {\'callbacks\': [query_relay_bank_status, update_relay_bank_status_ui]})">'+standardJSON.buttons[button]+'</button></div>';
+                        }
+                    }
+                    ui_html += '</div>';
+
+                    var bank_check = current_bank;
+                    i++;
+                }
+            }
+            i=1;
+            while(i<=current_bank){
+                query_relay_bank_status(i, {'callbacks': [update_relay_bank_status_ui], 'bank' : i});
+                i++;
+            }
+            document.getElementById('tbc_04').innerHTML = ui_html;
+		}
+        function send_command(cmd, kwargs = {}) {
+          var web_i_cgi;
+          cmd = cmd.join(',');
+          var callback = get_first_callback(kwargs);
+          setTimeout(function () { web_i_cgi = new NCD_AJAX( 'webi_control.cgi', callback, kwargs); web_i_cgi.doPost(cmd);}, 300)
+        }
+        function send_mutliple_commands(cmd, kwargs = {}){
+            var web_i_cgi;
+            cmd.forEach((item, i) => {
+                cmd[i] = cmd[i].join(',');
+            });
+            cmd = cmd.join(':');
+            var callback = get_first_callback(kwargs);
+            setTimeout(function () { web_i_cgi = new NCD_AJAX( 'webi_control.cgi', callback, kwargs); web_i_cgi.doPost(cmd);}, 300)
+        }
+        function toHexString(byteArray) {
+            return Array.from(byteArray, function(byte) {
+                return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+            }).join(' ')
+        }
+        function check_packet_api(packet){
+            var responses = packet.split(':');
+            // console.log(responses);
+            responses.forEach(function(response){
+                var response = response.split(',');
+                console.log('received bytes: (dec)[' + response.join(', ') + '] (hex)['+toHexString(response)+']');
+                var response_checksum = response[response.length-1];
+                var expected_checksum = response.reduce((a,b) => parseInt(a)+parseInt(b), 0)-response[response.length-1];
+                if(response[0] != 170){
+                    // console.log('Response header was not 170');
+                    console.log('Response header was not 170, packet may be invalid');
+                    // return false;
+                }
+                if(response_checksum != expected_checksum){
+                    console.log('Checksum: ' + String(response_checksum) + ' is incorrect. Expected checksum of: ' + String(expected_checksum));
+                }
+                if(response[1] != response.length-3){
+                    console.log('Payload length error. Expected ' + String(response[1]) + ' bytes, received payload of ' +  String(response.length-3) + ' bytes.');
+                }
+            });
+        }
+        // function wrap_api(cmd){
+		// 	header = 170;
+		// 	length = cmd.length;
+		// 	cmd_sum = cmd.reduce((a,b) => a+b, 0);
+		// 	checksum = (header+length+cmd_sum) & 255;
+		// 	return [header, length].concat(cmd).concat(checksum);
+		// }
+        function update_relay_bank_status_ui(event, kwargs = {}){
+            if(kwargs.hasOwnProperty('bank')){
+                event = remove_superfluous_response(event);
+                check_packet_api(event);
+                var status = event.split(',')[2];
+                var bank_elements = document.querySelectorAll("[data-bank='"+kwargs.bank+"']");
+                bank_elements.forEach(function(item){
+                    if(status & 1<<(item.dataset.relay-1)){
+                        item.getElementsByClassName('relay_status')[0].innerHTML = "On";
+                    }else{
+                        item.getElementsByClassName('relay_status')[0].innerHTML = "Off";
+                    }
+                });
+            }
+        }
+        function check_interval_triggers(link){
+            if(link.id == 'tb_6' && adc_poll == undefined){
+                var adc_poll = setInterval(function(){get_all_adc_values_8bit({'callbacks': [update_adc_UI]})}, 2000);
+            }
+            else if(link.id != 'tb_6' && adc_poll != undefined){
+                clearInterval(adc_poll);
+                var adc_poll = undefined;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            build_UI();
+            build_macros_UI();
+            [].slice.call(document.getElementById('nav').children).forEach(item => item.addEventListener('click', function (){ check_interval_triggers(item) }));
+        });
+    </script>
+</head>
+<body onload='hoverli(GetTabId());'>
+    <div id="web_response_block" class="hidden">
+    </div>
+    <div id='shadow-one'>
+        <div id='shadow-two'>
+            <div id='shadow-three'>
+                <div id='shadow-four'>
+                    <div id='page'>
+                        <div id='title'>
+                            <div class='right'><b id='txtdevicename'></b>&nbsp;CONFIGURATION&nbsp;&nbsp;<a href='javascript:void(0);' onclick='do_logout();'>Logout</a></div>
+                        </div>
+                        <div id='content'>
+                            <div class='lfloat' style='width:150px'>
+                                <ul id='nav'>
+                                    <li class='aa' id='tb_1' onClick='hoverli(1);getRunData();'><a href='#Overview'>Device View</a></li>
+                                    <li class='aa' id='tb_2' onClick='hoverli(2);'><a href='#Basic'>Basic Settings</a></li>
+                                    <li class='aa' id='tb_3' onClick='hoverli(3);'><a href='#Advanced'>Advanced Options</a></li>
+                                    <li class='aa' id='tb_4' onClick='hoverli(4);'><a href='#Web-i'>Web-i</a></li>
+                                    <li class='aa' id='tb_5' onClick='hoverli(5);'><a href='#Macros'>Macros</a></li>
+                                    <li class='aa' id='tb_6' onClick='hoverli(6);'><a href='#ADC' id='ADC'>ADC</a></li>
+                                    <li class='aa' id='tb_7' onClick='hoverli(7);'><a href='#Management'>Management</a></li>
+                                    <li class='aa' id='tb_8' onClick='hoverli(8);'><a href='#AboutUs'>About Us</a></li>
+                                </ul>
+                            </div>
+                            <div class='rfloat' style='width:550px;'>
+                                <div id='newinfo'>
+                                    <div class='ctt list2'>
+                                        <div class='undis' id='tbc_01'>
+                                            <div id='realtime'>
+                                                <table border='0' cellspacing='0' cellpadding='3'>
+                                                    <tr><td colspan='2' bgcolor='gray'><b>Product Information</b></td></tr>
+                                                    <tr><td width='25%'>Device Type:</td><td id='txtType' width='80%'>-</td></tr>
+                                                    <tr><td>Device Name:</td><td id='txtDeviceName'>-</td></tr>
+                                                    <tr><td>Serial Number:</td><td id='txtSn'>-</td></tr>
+                                                    <tr><td>Firmware Version:</td><td id='txtVer2'>-</td></tr>
+                                                    <tr><td>Temperature:</td><td id='temp'>-</td></tr>
+                                                    <tr><td>Run Time:</td><td id='onTime'>-</td></tr>
+                                                    <tr><td>Serial Rx:</td><td id='rx'>-</td></tr>
+                                                    <tr><td>Serial Tx:</td><td id='tx'>-</td></tr>
+                                                    <tr><td colspan='2' bgcolor='gray'><b>Network Information</b></td></tr>
+                                                    <tr><td>DHCP:</td><td id='txtDhcp2'>-</td></tr>
+                                                    <tr><td>IP Address:</td><td id='txtIp2'>-</td></tr>
+                                                    <tr><td>Subnet:</td><td id='txtSub2'>-</td></tr>
+                                                    <tr><td>Gateway:</td><td id='txtGw2'>-</td></tr>
+                                                    <tr><td>DNS Server:</td><td id='txtDns2'>-</td></tr>
+                                                    <tr><td colspan='2' bgcolor='gray'><b>Socket Information</b></td></tr>
+                                                    <tr><td>Mode:</td><td id='txtMode2'>-</td></tr>
+                                                    <tr><td>Local Port:</td><td id='txtLpt2'>-</td></tr>
+                                                    <tr><td>Remote Host:</td><td id='txtRip2'>-</td></tr>
+                                                    <tr><td>Remote Port:</td><td id='txtRpt2'>-</td></tr>
+                                                    <tr><td colspan='2' bgcolor='gray'><b>UART Information</b></td></tr>
+                                                    <tr><td>Baud Rate:</td><td id='txtBaudrate2'>-</td></tr>
+                                                    <tr><td>Data Bit:</td><td id='txtDatabit2'>-</td></tr>
+                                                    <tr><td>Parity:</td><td id='txtParity2'>-</td></tr>
+                                                    <tr><td>Stop Bit:</td><td id='txtStopbit2'>-</td></tr>
+                                                    <tr><td>Flow Control:</td><td id='txtFlow2'>-</td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class='undis' id='tbc_02'>
+                                            <table border='0' cellspacing='0' cellpadding='3'>
+                                                <tr><td><b>Network Setting</b></td><td id='textcheckvaluebasic' name='checkvaluebasic' type='text' style='color:red' outline='none'></td></tr>
+                                                <tr><td width='165px'>MAC Address:</td><td><input maxlength='30' size='30' id='txtMac' name='mac' disabled='true' type='text' /></td></tr>
+                                                <tr><td heigh='15px'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr><td heigh='15px'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxdhcp'>Use DHCP</label></td><td><label><input type='checkbox' id='checkboxdhcp' onclick='onChecked()' /></label></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtIp'>IP Address:</label></td><td><input id='txtIp' class='w' name='ip' type='text' onblur='checkvalue(txtIp)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtSub'>Subnet Mask:</label></td><td><input id='txtSub' class='w' name='sub' type='text' onblur='checkvalue(txtSub)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtGw'>Gateway:</label></td><td><input id='txtGw' class='w' name='gw' type='text' onblur='checkvalue(txtGw)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtDns'>DNS Server:</label></td><td><input id='txtDns' class='w' name='dns' type='text' onblur='checkvalue(txtDns)'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr><td><b>Socket Setting</b></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td width='165px'>Start Mode:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtStart'>
+                                                            <option value='0'>AT Command Mode</option>
+                                                            <option value='1'>Data Mode</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Socket Type:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtMode'>
+                                                            <option value='0'>TCP Server</option>
+                                                            <option value='1'>TCP Client</option>
+                                                            <option value='2'>UDP</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtRip'>Remote Host:</label></td><td width='245px'><input maxlength='30' size='30' id='txtRip' name='rip' type='text'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtRpt'>Remote Port:</label></td><td><input maxlength='30' size='30' id='txtRpt' name='rpt' type='text' onblur='checkvalue(txtRpt)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtLpt'>Local Port:</label></td><td><input maxlength='30' size='30' id='txtLpt' name='lpt' type='text' onblur='checkvalue(txtLpt)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxbind'>Bind Local Port</label></td><td><input type='checkbox' id='checkboxbind' /></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tbody id='divModbus'>
+                                                    <tr><td><b>Modbus option</b></td></tr>
+                                                    <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='chkModbus'>Enable Modbus Mode</label></td><td><input type='checkbox' id='chkModbus' onclick='enableModbus()' /></td></tr>
+                                                    <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                        <td><label id='lblModbus' for='selModbusMode'>Select Modbus Mode:</label></td>
+                                                        <td>
+                                                            <select style='width:243px' class='pull' id='selModbusMode' disabled=false>
+                                                                <option value='1'>Mobus RTU</option>
+                                                                <option value='2'>Modbus ASCII</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                </tbody>
+                                                <tr><td><b>UART Setting</b></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td width='165px'>Baud Rate:</td>
+                                                    <td width='245px'>
+                                                        <select style='width:243px' class='pull' id='txtBaudrate'>
+                                                            <option value='0'>1200</option>
+                                                            <option value='1'>2400</option>
+                                                            <option value='2'>4800</option>
+                                                            <option value='3'>9600</option>
+                                                            <option value='4'>14400</option>
+                                                            <option value='5'>19200</option>
+                                                            <option value='6'>38400</option>
+                                                            <option value='7'>56000</option>
+                                                            <option value='8'>57600</option>
+                                                            <option value='9'>115200</option>
+                                                            <option value='10'>128000</option>
+                                                            <option value='11'>230400</option>
+                                                            <option value='12'>256000</option>
+                                                            <option value='13'>460800</option>
+                                                            <option value='14'>921600</option>
+                                                            <option value='15'>1152000</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Data Bit:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtDatabit'>
+                                                            <option value='0'>7</option>
+                                                            <option value='1'>8</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Parity:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtParity'>
+                                                            <option value='0'>NONE</option>
+                                                            <option value='1'>ODD</option>
+                                                            <option value='2'>EVEN</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Stop Bit:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtStopbit'>
+                                                            <option value='0'>0.5</option>
+                                                            <option value='1'>1</option>
+                                                            <option value='2'>1.5</option>
+                                                            <option value='3'>2</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Flow Control:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtFlow'>
+                                                            <option value='0'>NONE</option>
+                                                            <option value='1'>CTS/RTS</option>
+                                                            <option value='2'>RS485</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr><td></td><td colspan='2'><input id='reset_set' value='Reset' onclick='do_reset();' type='button' class='butstyle'><input value='Save Settings' onClick='SetValue(this);' type='button' class='butstyle' /></td></tr>
+                                            </table>
+                                        </div>
+                                        <div class='undis' id='tbc_03'>
+                                            <table border='0' cellspacing='0' cellpadding='3'>
+                                                <tr><td><b>Parameter Setting</b></td><td id='textcheckvalueadvanced' name='checkvalueadvanced' type='text' style='color:red' outline='none'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td width='200px'><label for='txtDevice'> Device Name:</label></td><td><input maxlength='30' size='30' id='txtDevice' name='device' type='text' onblur='checkvalue(txtDevice)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxnetbios'>Enable NETBIOS</label></td><td><input type='checkbox' id='checkboxnetbios' /></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtHttpport'>HTTP Port:</label></td><td><input maxlength='30' size='30' id='txtHttpport' name='httpport' type='text' onblur='checkvalue(txtHttpport)'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtPack_l'>Data Packing Size(byte):</label> </td><td width='245px'><input maxlength='30' size='30' id='txtPack_l' name='nagle' type='text' onblur='checkvalue(txtPack_l)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtPack_t'>Data Packing Time(ms):</label> </td><td width='245px'><input maxlength='30' size='30' id='txtPack_t' name='nagle' type='text' onblur='checkvalue(txtPack_t)'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtRec'>Reconnection Time(ms):</label></td><td><input maxlength='30' size='30' id='txtRec' name='rec' type='text' onblur='checkvalue(txtRec)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtIna'>Inactivity Time(ms):</label></td><td><input maxlength='30' size='30' id='txtIna' name='ina' type='text' onblur='checkvalue(txtIna)'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='txtKa'>Keep Alive Time(5s):</label></td><td><input maxlength='30' size='30' id='txtKa' name='ka' type='text' onblur='checkvalue(txtKa)'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td>Verify the Connection:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtLinkp'>
+                                                            <option value='0'>No</option>
+                                                            <option value='1'>Check Password</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td width='165px'>Send Hello Message:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtLinks' onchange='onChecked()'>
+                                                            <option value='0'>None</option>
+                                                            <option value='1'>Send Device Name</option>
+                                                            <option value='2'>Send MAC Address</option>
+                                                            <option value='3'>Send IP Address</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td width='165px'>Connection Condition:</td>
+                                                    <td>
+                                                        <select style='width:243px' class='pull' id='txtLinkc'>
+                                                            <option value='0'>Connect Socket after Power On</option>
+                                                            <option value='1'>Connect Socket after Uart Received Data</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxlinkc'>Clear Buffer if Connected</label></td><td><input type='checkbox' id='checkboxlinkc' /></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxdebug'>Enable Debug Message</label></td><td><input type='checkbox' id='checkboxdebug' /></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxecho'>Enable AT Echo</label></td><td><input type='checkbox' id='checkboxecho' /></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr><td></td><td colspan='2'><input id='reset_set' value='Reset' onclick='do_reset();' type='button' class='butstyle'><input value='Save Settings' onClick='SetValue(this);' type='button' class='butstyle'></td></tr>
+                                            </table>
+                                        </div>
+                                        <div class='undis' id='tbc_04'>
+
+                                        </div>
+										<div class='undis' id='tbc_05'>
+											<h2>Macros</h2>
+											<div>Macro Response: <span id="default_macros_response_target"></span></div>
+										</div>
+										<div class='undis' id='tbc_06'>
+											<button onclick="get_all_adc_values_8bit({'callbacks': [update_adc_UI]})">Refresh ADC Values</button>
+											<table id="adc_table">
+												<tr data-adc-channel="1">
+													<td class="adc_label">
+														Channel 1:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="2">
+													<td class="adc_label">
+														Channel 2:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="3">
+													<td class="adc_label">
+														Channel 3:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="4">
+													<td class="adc_label">
+														Channel 4:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="5">
+													<td class="adc_label">
+														Channel 5:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="6">
+													<td class="adc_label">
+														Channel 6:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="7">
+													<td class="adc_label">
+														Channel 7:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+												<tr data-adc-channel="8">
+													<td class="adc_label">
+														Channel 8:
+													</td>
+                                                    <td class="adc_bar_cell">
+                                                        <div class="adc_bar">
+
+                                                        </div>
+                                                    </td>
+													<td class="adc_value">
+														Querying
+													</td>
+												</tr>
+											</table>
+										</div>
+                                        <div class='undis' id='tbc_07'>
+                                            <table border='0' cellspacing='0' cellpadding='3'>
+                                                <tr><td><b>Password Setting</b></td><td id='textcheckpwd' name='checkpwd' type='text' style='color:red' outline='none'></td></tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td><label for='txtoldpwd'>Old Password:</label></td>
+                                                    <td><input maxlength='30' size='30' id='txtoldpwd' name='pwd' type='password'></td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td><label for='txtnewpwd'>New Password:</label></td>
+                                                    <td><input maxlength='30' size='30' id='txtnewpwd' name='newpwd1' type='password'></td>
+                                                </tr>
+                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'>
+                                                    <td><label for='txtnewpwd2'>Confirm Password:</label></td>
+                                                    <td><input maxlength='30' size='30' id='txtnewpwd2' name='newpwd2' type='password'></td>
+                                                    <td><input id='chgpwd' value='Set' onclick='chgpwd();' type='button' class='butstyle'></td>
+                                                </tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                                <tr><td><b>Management</b></td></tr>
+                                                <tr><td>Factory Default:</td><td></td><td><input id='default_set' value='Default' onclick='do_default();' type='button' class='butstyle'></td></tr>
+                                                <tr><td>Reset Device:</td><td></td><td><input id='reset_set' value='Reset' onclick='do_reset();' type='button' class='butstyle'></td></tr>
+                                                <tr><td>Logout:</td><td></td><td><input id='Logout' value='Logout' onclick='do_logout();' type='button' class='butstyle'></td></tr>
+                                                <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
+                                            </table>
+                                            <div class='spacer'>&nbsp;</div>
+                                        </div>
+                                        <div class='undis' id='tbc_08'>
+                                            <img id='imgLogo' src='' alt='logo' />
+                                            <div id='divCompanyIntro'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='spacer'>&nbsp;</div>
+                        <div id='footer'></div><div id="version" style='color:#ccc;float:right;'>v1.6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='w5500.js'></script>
+    <script type='text/javascript' src='profile.js'></script>
+</body>
+</html>
