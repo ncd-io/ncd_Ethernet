@@ -22,12 +22,12 @@ Update Firmware Instructions:
 ## Changelog
 ### Hardware Rev 2 Firmware
 v2.2:
-Fixed Javascript callback bug, pass-through in AT mode bug
-Fixed issue with LED not lighting when socket Connected
-Fixed issue with Device name being ignored when sent during initial connection
-More robust detection of physical disconnect to automatically resolve socket connection
-Fixed issue with Inactivity setting being ignored
+* Fixed Javascript callback bug, pass-through in AT mode bug
+* Fixed issue with LED not lighting when socket Connected
+* Fixed issue with Device name being ignored when sent during initial connection
+* More robust detection of physical disconnect to automatically resolve socket connection
+* Fixed issue with Inactivity setting being ignored
 
 ### Hardware Rev 1 Firmware
 v2.4
-Fixed Javascript callback bug, pass-through in AT mode bug
+* Fixed Javascript callback bug, pass-through in AT mode bug
