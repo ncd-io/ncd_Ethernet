@@ -21,6 +21,11 @@ Update Firmware Instructions:
 
 ## Changelog
 ### Hardware Rev 2 Firmware
+v2.3
+* Fixed Factory Reset Button not functioning
+* Fixed frequent power cycles casuing loss of settings
+* Fixed issue with AT mode not working via serial without IP address assignment
+
 v2.2:
 * Fixed Javascript callback bug, pass-through in AT mode bug
 * Fixed issue with LED not lighting when socket Connected
