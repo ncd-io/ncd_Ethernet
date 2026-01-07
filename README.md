@@ -21,6 +21,10 @@ Update Firmware Instructions:
 
 ## Changelog
 ### Hardware Rev 2 Firmware
+v2.6
+* Fixed bug with logout link via web ui
+* Added support for disabling the automatic timed logout from the web ui.
+
 v2.3
 * Fixed Factory Reset Button not functioning
 * Fixed frequent power cycles casuing loss of settings
