@@ -325,81 +325,6 @@
             };
         }
 
-        function profile_AJAX(url, callback) {
-            var req = AJAX_init();
-            req.onreadystatechange = AJAX_processRequest;
-            function AJAX_init() {
-                if (window.XMLHttpRequest) {
-                    return new XMLHttpRequest();
-                }
-                else if (window.ActiveXObject) {
-                    return new ActiveXObject('Microsoft.XMLHTTP');
-                }
-            }
-            function AJAX_processRequest() {
-                if ((req.readyState == 4) && (req.status == 200) && callback) {
-                    callback(req.responseText);
-                }
-            }
-            this.doGet = function () {
-                req.open('GET', url, true);
-                req.send(null);
-            };
-            this.doPost = function (body) {
-                req.open('POST', url, true);
-                req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                req.setRequestHeader('ISAJAX', 'yes');
-                req.send(body);
-            };
-			req.onerror = function retry_ajax(e){
-				console.log(e);
-				get_profile();
-			}
-        }
-		function w5500_AJAX(url, callback) {
-            var req = AJAX_init();
-            req.onreadystatechange = AJAX_processRequest;
-            function AJAX_init() {
-                if (window.XMLHttpRequest) {
-                    return new XMLHttpRequest();
-                }
-                else if (window.ActiveXObject) {
-                    return new ActiveXObject('Microsoft.XMLHTTP');
-                }
-            }
-            function AJAX_processRequest() {
-                if ((req.readyState == 4) && (req.status == 200) && callback) {
-                    callback(req.responseText);
-                }
-            }
-            this.doGet = function () {
-                req.open('GET', url, true);
-                req.send(null);
-            };
-            this.doPost = function (body) {
-                req.open('POST', url, true);
-                req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                req.setRequestHeader('ISAJAX', 'yes');
-                req.send(body);
-            };
-			req.onerror = function retry_ajax(e){
-				console.log(e);
-				get_w5500();
-			}
-        }
-		// Added to resolve poor inclusion of profile and w5500 js files
-		// These files need to be run as eval, this is not preferable
-		function get_profile(){
-            var pUpdate;
-            setTimeout(function () { pUpdate = new AJAX('profile.js', function (t) { try { evil(t); } catch (e) { location.href = '/'; } }); pUpdate.doGet(''); }, 300);
-		}
-		function get_w5500(){
-            var wUpdate;
-            setTimeout(function () { wUpdate = new AJAX('w5500.js', function (t) { try { evil(t); } catch (e) { location.href = '/'; } }); wUpdate.doGet(''); }, 300);
-		}
-		get_w5500();
-		get_profile();
-
         function GetTabId() {
             var s = [];
             var url = window.location.href;
@@ -457,7 +382,6 @@
             }
             if ($('checkboxecho')) { if (o.echo == '1') $('checkboxecho').checked = 'checked'; }
             if ($('checkboxdebug')) { if (o.debug == '1') $('checkboxdebug').checked = 'checked'; }
-            if ($('checkboxtimeoutlogout')) { if (o.timeoutlogout == '1') $('checkboxtimeoutlogout').checked = 'checked'; }
             if ($('checkboxdhcp')) {
                 if (o.dhcp == '1') {
                     $('checkboxdhcp').checked = 'checked';
@@ -693,7 +617,6 @@
             var clrbuf; var checkboxlinkc = $('checkboxlinkc'); if (checkboxlinkc.checked) { clrbuf = 1; } else { clrbuf = 0; }
             var debug; var checkboxdebug = $('checkboxdebug'); if (checkboxdebug.checked) { debug = 1; } else { debug = 0; }
             var echo; var checkboxecho = $('checkboxecho'); if (checkboxecho.checked) { echo = 1; } else { echo = 0; }
-            var timeoutlogout; var checkboxtimeoutlogout = $('checkboxtimeoutlogout'); if (checkboxtimeoutlogout.checked) { timeoutlogout = 1; } else { timeoutlogout = 0; }
             var oSetSocket;
             var post_timer;
             if (CheckIp('txtRip')) {
@@ -701,7 +624,7 @@
                 post_timer = setTimeout(
                     function () {
                         oSetSocket = new AJAX('config.cgi', function (t) { try { alert(t); } catch (e) { alert(e); } });
-                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rip=' + rip + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo + '&timeoutlogout=' + timeoutlogout
+                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rip=' + rip + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo
                         );
                     }, 300);
             }
@@ -711,7 +634,7 @@
                 post_timer = setTimeout(
                     function () {
                         oSetSocket = new AJAX('config.cgi', function (t) { try { alert(t); } catch (e) { alert(e); } });
-                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&domain=' + domain + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo + '&timeoutlogout=' + timeoutlogout
+                        oSetSocket.doPost('baudrate=' + baudrate + '&databit=' + databit + '&parity=' + parity + '&stopbit=' + stopbit + '&flow=' + flow + '&dhcp=' + dhcp + '&lip=' + lip + '&sub=' + sub + '&gw=' + gw + '&dns=' + dns + '&start=' + start + '&styp=' + styp + '&rpt=' + rpt + '&lpt=' + lpt + '&bind=' + bind + '&dnsf=' + dnsf + '&domain=' + domain + '&netbios=' + netbios + '&device=' + device + '&httpport=' + httpport + '&pack_t=' + pack_t + '&pack_l=' + pack_l + '&ina=' + ina + '&ka=' + ka + '&rec=' + rec + '&linkp=' + linkp + '&links=' + links + '&linkc=' + linkc + '&clrbuf=' + clrbuf + '&debug=' + debug + '&echo=' + echo
                         );
                     }, 300);
             }
@@ -1430,7 +1353,6 @@
                                                 <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxlinkc'>Clear Buffer if Connected</label></td><td><input type='checkbox' id='checkboxlinkc' /></td></tr>
                                                 <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxdebug'>Enable Debug Message</label></td><td><input type='checkbox' id='checkboxdebug' /></td></tr>
                                                 <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxecho'>Enable AT Echo</label></td><td><input type='checkbox' id='checkboxecho' /></td></tr>
-                                                <tr onmouseover='mouseover(this)' onmouseout='mouseout(this)'><td><label for='checkboxtimeoutlogout'>Enable Web Timeout Logout</label></td><td><input type='checkbox' id='checkboxtimeoutlogout' /></td></tr>
                                                 <tr><td colspan='3' style='border-top:1px dotted #666;'></td></tr>
                                                 <tr><td></td><td colspan='2'><input id='reset_set' value='Reset' onclick='do_reset();' type='button' class='butstyle'><input value='Save Settings' onClick='SetValue(this);' type='button' class='butstyle'></td></tr>
                                             </table>
@@ -1592,5 +1514,7 @@
             </div>
         </div>
     </div>
+    <script type='text/javascript' src='w5500.js'></script>
+    <script type='text/javascript' src='profile.js'></script>
 </body>
 </html>
